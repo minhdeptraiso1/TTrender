@@ -1,0 +1,8 @@
+.rating {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.star {
+    display: block;     
+    object-fit: contain;
+}

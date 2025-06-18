@@ -1,0 +1,31 @@
+.container {
+    position: fixed; /* dùng position: fixed thay vì display: fixed */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7); /* làm mờ nền */
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    border-bottom: 10px solid #e7292e;
+    width: 120px; /* tuỳ chỉnh */
+    height: 120px;
+}
+
+.container h1 {
+    color: #e7292e;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}

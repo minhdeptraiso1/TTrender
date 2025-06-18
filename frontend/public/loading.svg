@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .food {
+      font-size: 30px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+      animation: spin 2s linear infinite;
+      transform-origin: center;
+    }
+    .pizza {
+      transform: rotate(0deg) translate(60px) rotate(0deg);
+      animation-delay: 0s;
+    }
+    .burger {
+      transform: rotate(120deg) translate(60px) rotate(-120deg);
+      animation-delay: 0.2s;
+    }
+    .bread {
+      transform: rotate(240deg) translate(60px) rotate(-240deg);
+      animation-delay: 0.4s;
+    }
+    @keyframes spin {
+      0%   { transform: rotate(0deg) translate(60px) rotate(0deg); }
+      100% { transform: rotate(360deg) translate(60px) rotate(-360deg); }
+    }
+  </style>
+
+  <circle cx="100" cy="100" r="70" fill="#fffbe6" stroke="#ffcc00" stroke-width="2" />
+  
+  <text x="100" y="100" class="food pizza">🍕</text>
+  <text x="100" y="100" class="food burger">🍔</text>
+  <text x="100" y="100" class="food bread">🍞</text>
+</svg>

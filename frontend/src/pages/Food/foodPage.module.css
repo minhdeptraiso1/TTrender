@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+.container > * {
+    min-width: 25rem;
+    max-width: 40rem;
+}
+.image {
+    border-radius: 3rem;
+    flex: 1 0;
+    height: 35rem;
+    object-fit: cover;
+    margin: 1rem;
+}
+.details {
+    width: 100%;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem;
+    padding: 2rem;
+    color : black;
+    margin-left: 1rem;
+}
+.header {
+    display: block;
+    margin: 0 10rem;
+    justify-content: space-between;
+}
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.favorite {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: gold;
+    cursor: pointer;
+}
+.favorite.not {
+    color: gray;
+}
+.rating {
+    display: flex;
+    align-items: center;
+}
+.rating .star {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+.rating .star:hover {
+    cursor: pointer;
+}
+.rating .star.active {
+    color: #e7292e;
+}
+.origins {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.origins > * {
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: gray;
+    margin-right: 0.3rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+}
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #17d88e;
+}
+.price::before{
+    content: 'Giá:';
+    color : darkgray;
+}
+.cookTime {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.container .button {
+    color : #fff;
+    background-color: #d70f15;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 10rem;
+    outline: none;
+
+}
+.button:hover {
+    background-color: #ff0105;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
